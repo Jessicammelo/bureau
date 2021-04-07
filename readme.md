@@ -19,6 +19,7 @@
 
 ### Arquitetura
 ![enter image description here](https://github.com/Jessicammelo/bureau/blob/master/Arquitetura.png?raw=true)
+
 -A imagem da arquitetura mostra as camadas do projeto, onde a API Rest é a camada de controladores que repassa para a camada de serviços onde a chamada é processada e encaminhada para o repository onde será salvo no banco de dados.
 
 ### Modelagem
