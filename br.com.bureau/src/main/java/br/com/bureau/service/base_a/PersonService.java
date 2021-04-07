@@ -51,6 +51,7 @@ public class PersonService {
 	private MovementService movementService;
 	
 	public Person create(Person person) {
+		
 		return personRepository.save(person);
 	}
 
