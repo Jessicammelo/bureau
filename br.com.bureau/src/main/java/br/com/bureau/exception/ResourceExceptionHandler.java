@@ -21,6 +21,14 @@ public class ResourceExceptionHandler {
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(err);
 	}
 	
+	@ExceptionHandler(ConflictedException.class)
+	public ResponseEntity<StandardError> ConflictedException(ConflictedException e, HttpServletRequest request) {
+
+		StandardError err = new StandardError(HttpStatus.CONFLICT.value(), e.getMessage(),
+				HttpStatus.CONFLICT.value(), System.currentTimeMillis());
+		return ResponseEntity.status(HttpStatus.CONFLICT).body(err);
+	}
+	
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public ResponseEntity<StandardError> validation(MethodArgumentNotValidException e, HttpServletRequest request) {
 

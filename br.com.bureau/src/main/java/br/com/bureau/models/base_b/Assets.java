@@ -20,12 +20,12 @@ public class Assets {
 	
 	@NotNull(message = "Digite o nome")
 	@NotEmpty(message = "O nome não pode ser vazio")
-	@Size(min = 11, max = 20, message = "O nome deve conter de 3 a 250 caracteres")
+	@Size(min = 2, max = 250, message = "O nome deve conter de 2 a 250 caracteres")
 	private String name;
 	
 	@NotNull(message = "Digite a descrição")
 	@NotEmpty(message = "A descrição não pode ser vazio")
-	@Size(min = 11, max = 20, message = "A descrição deve conter de 3 a 250 caracteres")
+	@Size(min = 2, max = 250, message = "A descrição deve conter de 2 a 250 caracteres")
 	private String description;
 	
 	@NotNull(message = "Digite o preço")

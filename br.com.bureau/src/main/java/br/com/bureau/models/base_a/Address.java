@@ -17,37 +17,37 @@ public class Address {
 	
 	@NotNull(message = "Digite o país")
 	@NotEmpty(message = "O país não pode ser vazio")
-	@Size(min = 11, max = 20, message = "O país deve conter de 3 a 100 caracteres")
+	@Size(min = 2, max = 100, message = "O país deve conter de 2 a 100 caracteres")
 	private String country;
 	
 	@NotNull(message = "Digite o estado")
 	@NotEmpty(message = "O estado não pode ser vazio")
-	@Size(min = 11, max = 20, message = "O estado deve conter de 3 a 100 caracteres")
+	@Size(min = 2, max = 100, message = "O estado deve conter de 2 a 100 caracteres")
 	private String state;
 	
 	@NotNull(message = "Digite a cidade")
 	@NotEmpty(message = "A cidade não pode ser vazia")
-	@Size(min = 11, max = 20, message = "A cidade deve conter de 3 a 100 caracteres")
+	@Size(min = 2, max = 100, message = "A cidade deve conter de 2 a 100 caracteres")
 	private String city;
 	
 	@NotNull(message = "Digite o bairro")
 	@NotEmpty(message = "O bairro não pode ser vazio")
-	@Size(min = 11, max = 20, message = "O bairro deve conter de 3 a 100 caracteres")
+	@Size(min = 2, max = 100, message = "O bairro deve conter de 2 a 100 caracteres")
 	private String district;
 	
 	@NotNull(message = "Digite o CEP")
 	@NotEmpty(message = "O CEP não pode ser vazio")
-	@Size(min = 11, max = 20, message = "O documento deve conter de 8 a 20 caracteres")
+	@Size(min = 7, max = 20, message = "O documento deve conter de 7 a 20 caracteres")
 	private String zipCode;
 	
 	@NotNull(message = "Digite a rua")
 	@NotEmpty(message = "A rua não pode ser vazia")
-	@Size(min = 11, max = 20, message = "O documento deve conter de 11 a 20 caracteres")
+	@Size(min = 3, max = 100, message = "O documento deve conter de 3 a 100 caracteres")
 	private String street;
 	
 	@NotNull(message = "Digite o número")
 	@NotEmpty(message = "O número não pode ser vazio")
-	@Size(min = 11, max = 20, message = "O número deve conter de 1 a 20 caracteres")
+	@Size(min = 1, max = 20, message = "O número deve conter de 1 a 20 caracteres")
 	private String number;
 	
 	@OneToOne

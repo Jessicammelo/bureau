@@ -20,7 +20,7 @@ public class Debts {
 	
 	@NotNull(message = "Digite uma descrição")
 	@NotEmpty(message = "A descrição não pode ser vazio")
-	@Size(min = 11, max = 20, message = "A descrição deve conter de 3 a 250 caracteres")
+	@Size(min = 1, max = 250, message = "A descrição deve conter de 1 a 250 caracteres")
 	private String description;
 	
 	@NotNull(message = "Digite a data de compra")

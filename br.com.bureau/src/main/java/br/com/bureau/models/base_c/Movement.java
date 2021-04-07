@@ -25,7 +25,7 @@ public class Movement {
 	
 	@NotNull(message = "Digite uma descrição")
 	@NotEmpty(message = "A descrição não pode ser vazio")
-	@Size(min = 11, max = 20, message = "A descrição deve conter de 3 a 250 caracteres")
+	@Size(min = 2, max = 250, message = "A descrição deve conter de 2 a 250 caracteres")
 	private String description;
 	
 	@OneToOne

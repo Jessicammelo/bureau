@@ -18,12 +18,12 @@ public class Person {
 	
 	@NotNull(message = "Digite o documento")
 	@NotEmpty(message = "O documento não pode ser vazio")
-	@Size(min = 11, max = 20, message = "O documento deve conter de 11 a 20 caracteres")
+	@Size(min = 10, max = 20, message = "O documento deve conter de 10 a 20 caracteres")
 	private String document;
 	
 	@NotNull(message = "Digite o nome")
 	@NotEmpty(message = "O nome não pode ser vazio")
-	@Size(min = 11, max = 20, message = "O nome deve conter de 3 a 250 caracteres")
+	@Size(min = 2, max = 250, message = "O nome deve conter de 2 a 250 caracteres")
 	private String name;
 	
 	@NotNull(message = "Digite a data de nascimento")
